@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-anton), "Arial Narrow", Impact, sans-serif;
+
+  --color-brand-red: #dd2e2e;
+  --color-brand-band: #d60000;
+  --color-brand-deep: #bb0a0a;
+  --color-brand-crimson: #cc2a2a;
+  --color-brand-maroon: #85161e;
+  --color-brand-gold: #fdbd10;
+  --color-brand-amber: #fdcb44;
+  --color-brand-cream: #fff6d7;
+  --color-brand-ivory: #fff6dd;
+  --color-brand-mist: #f7fbfb;
+  --color-brand-ink: #242424;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+  overflow-x: hidden;
 }
+
+.doodle-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mask-image: url("/images/doodles.png");
+  -webkit-mask-image: url("/images/doodles.png");
+  mask-size: 100% auto;
+  -webkit-mask-size: 100% auto;
+  mask-repeat: repeat;
+  -webkit-mask-repeat: repeat;
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
