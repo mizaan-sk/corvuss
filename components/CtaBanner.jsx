@@ -31,7 +31,7 @@ export default function CtaBanner() {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="inline-flex items-center justify-center bg-[#f7fbfb] px-10 py-5 font-display text-[1.6rem] leading-none tracking-[0.04em] text-black shadow-[0_18px_34px_-20px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:scale-[1.04] sm:text-[4vw] lg:h-[8.15vw] lg:w-[26.35vw] lg:px-0 lg:py-0 lg:text-[4.1vw]"
+          className="inline-flex items-center rounded-xl lg:rounded-[1vw] justify-center bg-[#f7fbfb] px-10 py-5 font-display text-[1.6rem] leading-none tracking-[0.04em] text-black shadow-[0_18px_34px_-20px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:scale-[1.04] sm:text-[4vw] lg:h-[8.15vw] lg:w-[26.35vw] lg:px-0 lg:py-0 lg:text-[4.1vw]"
         >
           ENQUIRE NOW
         </button>
